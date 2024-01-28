@@ -1,0 +1,53 @@
+this is for a project that will never be read or submitted most likely, but the idea of the program is to try everything they put before me.
+
+my style from the quiz is (A)nalytical
+
+The last time I had a communication breakdown was with a friend who has been through
+a very rough time lately. I had fault within the situation, and they were in an emotional
+state -- the combination of these elements created a wall between us, and nothing could
+pass over. Even the words we spoke were hollow, and by the end we were just ready to
+abandon them.
+
+I would say I generally communicate in a passive way because I like to listen to others,
+and then when I'm inspired I am more open. I can trample a bit.
+
+I like to be given general overviews, technical explanations when in non-personal conversations.
+I want to be able to map out the problem or situation by what I am being told.
+
+I usually respond to critical feedback with very little response at all. My immediate
+emotional reaction is usually one of denial but I like to spend time with things. Unless
+I know for sure that I am right and the criticism is wrong, I will spend time and analyze
+the feedback to see if it provides me with an opportunity to improve.
+
+Culture is the way people behave in a certain place, the way that a group of
+people treats the endeavor they're involved in together. It is also the
+idiosyncracies that build up when certain personalities interact. The germ
+that grows between meshed up personalities.
+
+Macy's: Relaxed but strained
+C&J: Getting hard work done
+
+I think what's important to me is remote work in terms of environment. I
+can be happier with the people from work I do interact with, even if its
+remote. And I can feel great about  my life and work.
+
+Whiteboarding problem
+
+Our problem or task is the creation of a counter function. This function
+should start a counter at 0 and for every subsequent invocation add 1 to
+the counter.
+
+There are no edge cases, as there are no inputs. The function only adds one
+to a counter every time it is invoked. I would solve this simply by
+creating a Closure within the original counter function which increments
+the counter variable by one every time it is invoked. The closure will
+return itself to keep track of the counter.
+
+const hiddenCounter = () => { // this creates the initial function
+counter = 0 // establishing this counter variable at 0
+const add = () => { // creating the returnd
+counter ++ // incrementing counter variable
+return add // return the function so that the counter variable is changed
+}
+return add // invoking the increment Closure
+}
